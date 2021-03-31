@@ -7,26 +7,35 @@
     </head>
     <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        <br>
-		Rate <input type="range" onchange="disp_rate_range(this.value)" min=0 max=20 step=0.25 value=10.25 id="rate">  
-		<span id="rate_span">10.25%</span><br/>
-        <br>
-		No. of Years <input type="number" list="yearsoptions" id="years">  <br/>
-		<datalist id="yearsoptions">
-			<option value=1></option>
-			<option value=2></option>
-			<option value=3></option>
-			<option value=4></option>
-			<option value=5></option>
-			<option value=6></option>
-			<option value=7></option>
-			<option value=8></option>
-			<option value=9></option>
-			<option value=10></option>
-		</datalist>
-		<br>
+		
+		<div class="row">
+			<label>Amount</label>
+			<input type="number"  id="principal">  
+			<br>
+		</div>
+		<div class="row">
+			<label>Rate</label>
+			<input type="range" onchange="disp_rate_range(this.value)" min=1 max=20 step=0.25 value=10.25 id="rate">  
+			<span id="rate_span">10.25%</span>
+			<br>
+		</div>
+		<div class="row">	
+			<label>No. Years </label>
+			<input type="number" list="yearsoptions" id="years">  <br/>
+			<datalist id="yearsoptions">
+				<option value=1></option>
+				<option value=2></option>
+				<option value=3></option>
+				<option value=4></option>
+				<option value=5></option>
+				<option value=6></option>
+				<option value=7></option>
+				<option value=8></option>
+				<option value=9></option>
+				<option value=10></option>
+			</datalist>
+			<br>
+		</div>	
         <button onclick="compute()">Compute Interest</button>
 		<span id="result_span"></span><br>
 		<br>

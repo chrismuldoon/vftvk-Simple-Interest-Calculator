@@ -19,10 +19,10 @@ function compute()
 	}
 	
 	//display
-	document.getElementById("result_span").innerHTML = '<br><BR>If you deposit $'+principal+
-														', <br>at an interest rate of '+rate+
-														'%, <br>you will recive an amount of $'+interest+
-														', <br>in the year '+future_year+'.';
+	document.getElementById("result_span").innerHTML = '<br><BR>If you deposit <mark>$'+principal+
+														'</mark>, <br>at an interest rate of <mark>'+rate+
+														'%</mark>, <br>you will recive an amount of <mark>$'+interest+
+														'</mark>, <br>in the year <mark>'+future_year+'</mark>.';
 }
 		
 function disp_rate_range() {
